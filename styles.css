@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color:hsl(30, 54%, 90%);
+    color:hsl(30, 10%, 34%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100 vh;
+    margin:0;
+    }
+    
+.recipe {
+        width:375 px;
+        background-color:hsl(0, 0%, 100%);
+        border-radius:50 px;
+        overflow:hidden;
+        box-shadow: 0 4px 8px rgba (0,0,0,0.1);
+        margin: 20px;
+        transition:width 0.3s; 
+    }
+    
+@media screen and (min-width: 375px) {
+        .recipe{
+            width: 300px;
+            margin: 20px auto;
+        }
+ }
+    
+@media screen and (min-width: 1440px) {
+        .recipe{
+            width:800px;
+        }
+}
+    
+.recipe-image img {
+        height:auto;
+        width:100%;
+        padding:10px;
+        border-radius: 15px;
+}
+    
+.recipe-content {
+        padding:20px;
+}
+    
+h1 {
+        font-family: 'Young Serif', serif;
+        font-size: 28px;
+        color: hsl(24, 5%, 18%);
+        margin-bottom: 10px;
+}
+    
+.description {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+}
+    
+h3 {
+        font-size: 18px;
+        color: hsl(14, 45%, 36%);
+        margin-bottom: 10px;
+        font-weight: 700;
+}
+    
+.preparation-time ul {
+        background-color: hsl(330, 100%, 98%);
+        padding: 30px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+}
+    
+.preparation-time li {
+        font-size: 16px;
+        margin-bottom: 5px;
+}
+    
+.ingredients ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        line-height:2;
+}
+    
+.instructions ol {
+        list-style-type: decimal;
+        flex:wrap;
+        padding-right: 30px;
+        padding-left: 20px;
+        text-align:justify;
+        margin-bottom: 20px;
+        line-height: 1.5;
+}
+    
+.instructions li {
+        margin-bottom: 10px;
+}
+    
+.nutrition table {
+        width: 100%;
+        margin-top: 10px;
+        border-collapse: collapse;
+}
+    
+.nutrition td {
+        padding: 10px;
+        border-top: 1px solid hsl(30, 18%, 87%);
+}
+    
+.nutrition td:first-child {
+        font-weight: bold;
+}
+    
+p {
+        font-size: 15px;
+        line-height: 1.5;
+}
